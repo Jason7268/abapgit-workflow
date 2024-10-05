@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZHIEN_DEMO06</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>New flight schedule &amp;1 &amp;2 has been registered successfully!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>New flight schedule was failed to register. Please contact administrator.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Data not found in Flight Schedule table SPFLI.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>This Flight Schedule has not been changed. No need to save</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Your changes was saved successfully. &amp;1 &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Your changes was failed to be saved. &amp;1 &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Please input all required fields.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Login successfully. &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Login Fail. Please check username and pass!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>&amp;1 &amp;2 has been registered successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_DEMO06</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>New usser was failed to register. Please contact administrator.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

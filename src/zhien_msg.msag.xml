@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZHIEN_MSG</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Product ID: &amp;1 | Product name: &amp;2 | Pro price: &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Sales Order: &amp;1 | Customer: &amp;2 | City: &amp;3 | District: &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Data not found. Please try to change selection conditions.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>PLEASE FILL ALL INPUT</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>CHECK INPUT MUST BE NUMBER</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZHIEN_MSG</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>CHECK INPUT NUMBER MUST BE GREATER &gt; 0</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
