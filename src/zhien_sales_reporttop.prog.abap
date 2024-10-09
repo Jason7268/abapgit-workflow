@@ -54,9 +54,7 @@ CLASS lcl_report DEFINITION.
       get_data,
       get_customer,
 * Generating output
-      generate_output,
-*      Show smartform
-      show_form.
+      generate_output.
 *$*$*.....CODE_ADD_1 - Begin..................................1..*$*$*
 * *
 *    In this section we will define the private methods which can

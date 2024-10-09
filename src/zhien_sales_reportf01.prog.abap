@@ -257,7 +257,7 @@ CLASS lcl_report IMPLEMENTATION.
         lo_column->set_long_text( 'Amount Without tax' ).
         lo_column->set_medium_text( 'Amount Wo tax' ).
         lo_column->set_short_text( 'Amount WOT' ).
-        lo_column->set_output_length( '50' ).
+        lo_column->set_output_length( 35 ).
       CATCH cx_salv_not_found." INTO DATA(LV_EX).                         "#EC NO_HANDLER
 *          MESSAGE LV_EX->get_text( ) TYPE 'E'.
 
@@ -439,51 +439,4 @@ CLASS lcl_report IMPLEMENTATION.
   ENDMETHOD. "set_filters
 *$*$*.....CODE_ADD_3 - End....................................3..*$*$*
 *
-  METHOD show_form.
-    DATA: lt_item TYPE ZTTHIENFORM_SO_ITEM.
-  MOVE-CORRESPONDING t_vbak TO lt_item .
-  ENDMETHOD. "show_form
-
 ENDCLASS. "lcl_report IMPLEMENTATION
-
-
-FORM show_form.
-  DATA: LT_ITEM TYPE ZSHIENFORM_SO_ITEM,
-        LS_HEAD TYPE ZSHIENFORM_PO_HEAD.
-
-  MOVE-CORRESPONDING GS_CURRENT_HEADER TO LS_HEAD.
-
-  LT_ITEM[] =  GT_ITEMS[].
-  DELETE LT_ITEM
-    WHERE PO_NUMBER <> LS_HEAD-PO_NUMBER.
-
-  CALL FUNCTION '/1BCDWB/SF00000094'
-    EXPORTING
-*     ARCHIVE_INDEX              =
-*     ARCHIVE_INDEX_TAB          =
-*     ARCHIVE_PARAMETERS         =
-*     CONTROL_PARAMETERS         =
-*     MAIL_APPL_OBJ              =
-*     MAIL_RECIPIENT             =
-*     MAIL_SENDER                =
-*     OUTPUT_OPTIONS             =
-*     USER_SETTINGS              = 'X'
-      im_po_head                 = LS_HEAD
-*   IMPORTING
-*     DOCUMENT_OUTPUT_INFO       =
-*     JOB_OUTPUT_INFO            =
-*     JOB_OUTPUT_OPTIONS         =
-    tables
-      tab_items                  = LT_ITEM
-    EXCEPTIONS
-      FORMATTING_ERROR           = 1
-      INTERNAL_ERROR             = 2
-      SEND_ERROR                 = 3
-      USER_CANCELED              = 4
-      OTHERS                     = 5
-            .
-  IF sy-subrc <> 0.
-    MESSAGE 'Error form' TYPE 'E'.
-  ENDIF.
-
-ENDFORM.
