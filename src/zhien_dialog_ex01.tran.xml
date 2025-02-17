@@ -3,17 +3,17 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <TSTC>
-    <TCODE>ZHIENDIALOG_DM06_2</TCODE>
-    <PGMNA>ZHIENDIALOG_DM06_2</PGMNA>
+    <TCODE>ZHIEN_DIALOG_EX01</TCODE>
+    <PGMNA>ZHIEN_DIALOG_EX01</PGMNA>
     <DYPNO>0100</DYPNO>
    </TSTC>
    <TSTCC>
-    <TCODE>ZHIENDIALOG_DM06_2</TCODE>
+    <TCODE>ZHIEN_DIALOG_EX01</TCODE>
    </TSTCC>
    <TSTCT>
     <SPRSL>E</SPRSL>
-    <TCODE>ZHIENDIALOG_DM06_2</TCODE>
-    <TTEXT>ZHIENDIALOG_DM06_2</TTEXT>
+    <TCODE>ZHIEN_DIALOG_EX01</TCODE>
+    <TTEXT>CRUD With Purchase Order</TTEXT>
    </TSTCT>
   </asx:values>
  </asx:abap>

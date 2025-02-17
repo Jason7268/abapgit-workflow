@@ -10,8 +10,6 @@
     <OUTPUTLEN>000015</OUTPUTLEN>
     <DECIMALS>000005</DECIMALS>
     <DDTEXT>Exchange Rate</DDTEXT>
-    <ACTFLAG>I</ACTFLAG>
-    <RESERVEDOM>JB</RESERVEDOM>
    </DD01V>
   </asx:values>
  </asx:abap>

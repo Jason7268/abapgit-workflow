@@ -1,3 +1,0 @@
-FUNCTION-POOL ZHIEN_FUNCTION_GROUP.         "MESSAGE-ID ..
-
-* INCLUDE LZHIEN_FUNCTION_GROUPD...          " Local class definition

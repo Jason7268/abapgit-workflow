@@ -1,7 +1,6 @@
 class ZCL_Z_00_EXAMPLE_MPC_EXT definition
   public
-  inheriting from ZCL_Z_00_EXAMPLE_MPC
-  create public .
+  create private .
 
 public section.
 protected section.

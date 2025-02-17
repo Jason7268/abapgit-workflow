@@ -15,7 +15,9 @@
     <SCRTEXT_S>Health Pln</SCRTEXT_S>
     <SCRTEXT_M>Health Plan</SCRTEXT_M>
     <SCRTEXT_L>Health Plan</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>E</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>

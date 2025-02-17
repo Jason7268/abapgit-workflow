@@ -5,6 +5,39 @@
 *&---------------------------------------------------------------------*
 REPORT zhien_testcode LINE-SIZE 250.
 
+DATA lv_number TYPE I.
+
+CALL FUNCTION 'NUMBER_GET_NEXT'
+  EXPORTING
+    nr_range_nr                   = '01'
+    object                        = 'ZPURORDER'
+*   QUANTITY                      = '1'
+*   SUBOBJECT                     = ' '
+*   TOYEAR                        = '0000'
+*   IGNORE_BUFFER                 = ' '
+ IMPORTING
+   NUMBER                        = lv_number
+*   QUANTITY                      =
+*   RETURNCODE                    =
+ EXCEPTIONS
+   INTERVAL_NOT_FOUND            = 1
+   NUMBER_RANGE_NOT_INTERN       = 2
+   OBJECT_NOT_FOUND              = 3
+   QUANTITY_IS_0                 = 4
+   QUANTITY_IS_NOT_1             = 5
+   INTERVAL_OVERFLOW             = 6
+   BUFFER_OVERFLOW               = 7
+   OTHERS                        = 8
+          .
+IF sy-subrc <> 0.
+* Implement suitable error handling here
+
+  ELSE.
+     MESSAGE 'Next number: ' && lv_number TYPE 'I'.
+ENDIF.
+
+
+
 
 *CALL FUNCTION 'DATE_CHECK_PLAUSIBILITY'
 *  EXPORTING
@@ -18,20 +51,20 @@ REPORT zhien_testcode LINE-SIZE 250.
 
 
 
-DATA: 1v_date TYPE sy-datum VALUE '20120931'. " YYYYMMDD
-CALL FUNCTION 'DATE_CHECK_PLAUSIBILITY'
-  EXPORTING
-    date                      = 1v_date
-  EXCEPTIONS
-    plausibility_check_failed = 1
-    OTHERS                    = 2.
-IF sy-subrc <> 0.
-  MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
-  WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO DATA(lv_ms).
-  MESSAGE lv_ms TYPE sy-msgty.
-ELSE.
-  MESSAGE 'Valid Date' TYPE 'I'.
-ENDIF.
+*DATA: 1v_date TYPE sy-datum VALUE '20120931'. " YYYYMMDD
+*CALL FUNCTION 'DATE_CHECK_PLAUSIBILITY'
+*  EXPORTING
+*    date                      = 1v_date
+*  EXCEPTIONS
+*    plausibility_check_failed = 1
+*    OTHERS                    = 2.
+*IF sy-subrc <> 0.
+*  MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
+*  WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4 INTO DATA(lv_ms).
+*  MESSAGE lv_ms TYPE sy-msgty.
+*ELSE.
+*  MESSAGE 'Valid Date' TYPE 'I'.
+*ENDIF.
 
 
 

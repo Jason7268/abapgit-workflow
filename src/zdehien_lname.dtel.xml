@@ -15,7 +15,9 @@
     <SCRTEXT_S>La name</SCRTEXT_S>
     <SCRTEXT_M>Last name</SCRTEXT_M>
     <SCRTEXT_L>Last name</SCRTEXT_L>
+    <ACTFLAG>I</ACTFLAG>
     <DTELMASTER>E</DTELMASTER>
+    <RESERVEDTE>JB</RESERVEDTE>
     <REFKIND>D</REFKIND>
    </DD04V>
   </asx:values>
